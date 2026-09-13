@@ -10,8 +10,17 @@
       "persistent": true
     },
     "start": {
-      "dependsOn": ["^build"]
-    },
+  "dependsOn": ["^build"],
+  "env": [
+    "DATABASE_URL",
+    "REDIS_URL",
+    "JWT_SECRET",
+    "COOKIE_SECRET",
+    "STORE_CORS",
+    "ADMIN_CORS",
+    "AUTH_CORS"
+  ]
+},
     "lint": {
       "outputs": []
     },
